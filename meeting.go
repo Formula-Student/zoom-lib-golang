@@ -220,13 +220,13 @@ type (
 		EndDateTime *Time `json:"end_date_time"`
 	}
 
-	// Breakout Rooms seetings
+	// BreakoutRoomSettings represents the breakout rooms for a meetings
 	BreakoutRoomSettings struct {
 		Enable bool           `json:"enable"`
 		Rooms  []BreakoutRoom `json:"rooms"`
 	}
 
-	// Individual breakout room
+	// BreakoutRoom contains settings for an individual breakout room
 	BreakoutRoom struct {
 		Name         string   `json:"name"`
 		Participants []string `json:"participants"`
